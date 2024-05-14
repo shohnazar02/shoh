@@ -13,3 +13,13 @@ import sqlite3
  result = cursor.fetchall()
  topildi = False
  for i in result:
+   if i[1] == nomi:
+        print(f"ID={i[0]}")
+        print(f"Name={i[1]}")
+
+        topildi = True
+
+if topildi == False:
+    print('Bunday dori topilmadi')
+
+conn.commi
